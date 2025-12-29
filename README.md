@@ -21,9 +21,7 @@ MongoDB: v6.0.6
 Mongosh: v2.0.2
 Installation Guide
 How to run the project locally
-Clone the Repository:
 
-git clone https://github.com/Pravakar-RijaI/Pustak-Prabandha.git
 Navigate to Both 'Frontend' and 'Backend' Folders:
 
 cd frontend  
