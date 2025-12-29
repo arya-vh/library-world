@@ -1,0 +1,32 @@
+.about-div-with-background {
+  height: 400px;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('/aboutUsBanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.about-quote-container {
+  max-width: 800px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-quote-container p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}

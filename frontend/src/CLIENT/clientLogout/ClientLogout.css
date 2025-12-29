@@ -1,0 +1,76 @@
+/* Logout Container */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  /* Logout Card */
+  .logout-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Logout Icon */
+  .logout-icon {
+    font-size: 3rem;
+    color: #6c757d; /* Grey color */
+    margin-bottom: 20px;
+  }
+  
+  /* Logout Title */
+  .logout-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; /* Dark grey */
+    margin-bottom: 10px;
+  }
+  
+  /* Logout Subtitle */
+  .logout-subtitle {
+    font-size: 1rem;
+    color: #6c757d; /* Grey color */
+    margin-bottom: 30px;
+  }
+  
+  /* Logout Buttons */
+  .logout-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-button-yes {
+    background-color: #dc3545; /* Red for logout */
+    color: white;
+  }
+  
+  .logout-button-yes:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .logout-button-no {
+    background-color: #6c757d; /* Grey for go back */
+    color: white;
+  }
+  
+  .logout-button-no:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+  }

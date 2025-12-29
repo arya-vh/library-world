@@ -1,0 +1,118 @@
+/* Sidebar Container */
+.sidebar {
+  margin-top: 60px;
+  padding: 30px 0;
+  left: 0;
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc); Gradient background */
+  background-color: #0D6EFD;
+  height: 100vh;
+  position: fixed;
+  width: 250px; /* Fixed width for the sidebar */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  color: white; /* Text color */
+
+
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+
+/* Navigation List */
+.sidebar .nav {
+  padding: 0 20px;  
+}
+
+/* Navigation Items */
+.sidebar-nav-item {
+  list-style: none;
+  margin-bottom: 5px; /* Space between items */
+}
+
+/* Navigation Links */
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white !important;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: transparent !important; /* Remove background */
+}
+
+/* Hover Effect */
+.sidebar-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Light hover effect */
+  transform: translateX(5px); /* Slight movement on hover */
+}
+
+/* Active Link */
+.sidebar-nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2) !important; /* Highlight active link */
+  font-weight: bold;
+}
+
+/* Icons */
+.sidebar-nav-link .icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+/* Mobile View Adjustments */
+
+/* ... your existing CSS ... */
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    margin-top: 30px;
+    top: 60px;
+    left: -250px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    /* height: 100vh; */
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .sidebar-overlay.open {
+    display: block;
+  }
+
+  /* Toggle Button Styles */
+  .sidebar-toggle-button {
+    position: fixed;
+    top: 99px; /* Adjusted top position to add 20px padding from the previous 15px */
+    left: 15px;
+    background-color: whitesmoke; /* Add background color */
+    border-radius: 20px; /* Add border radius */
+    padding: 8px 12px; /* Add padding for better visual */
+    border: none;
+    font-size: 1.5rem;
+    color: #0D6EFD;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .toggle-icon{
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+/* Container Styling */
+.add-new-book-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  .add-new-book-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Category Suggestions */
+  .category-suggestions {
+    margin-top: 10px;
+  }
+  
+  .category-suggestion {
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-suggestion:hover {
+    background-color: #ced4da;
+  }
+  
+  /* Image Preview */
+  .image-preview {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  .submit-button {
+    margin-right: 10px;
+  }
+  
+  .go-back-button {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .go-back-button:hover {
+    background-color: #5a6268;
+  }

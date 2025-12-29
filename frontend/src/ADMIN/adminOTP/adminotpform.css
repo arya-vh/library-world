@@ -1,0 +1,98 @@
+/* Container Styling */
+.otp-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Card Styling */
+.otp-form-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title Styling */
+.otp-form-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Subtitle Styling */
+.otp-form-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* Input Container Styling */
+.otp-input-container {
+  margin-bottom: 24px;
+}
+
+/* Input Field Styling */
+.otp-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Button Container Styling */
+.otp-button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Button Styling */
+.otp-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.otp-button-submit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.otp-button-submit:hover {
+  background-color: #218838;
+}
+
+.otp-button-resend {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.otp-button-resend:hover {
+  background-color: #5a6268;
+}
+
+.otp-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,236 @@
+/* LOCAL CSS Variables */
+.admin-signup-container {
+  --color-login-button: #3b82f6;
+  --color-login-button-hover: #60a5fa;
+  --color-font-primary: #111827;
+  --color-font-secondary: #ffffff;
+  --color-faded: #6b7280;
+  --color-faded-white: #d1d5db;
+  --color-signup-button: #10b981;
+  --color-signup-button-hover: #34d399;
+  --color-background: #f9fafb;
+  --color-border: #e5e7eb;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* <-----------------------------------------------------------------> */
+
+/* Main DIV ko CSS */
+.admin-signup-container {
+  width: 100%;
+  max-width: 600px; /* Increased by 50px */
+  margin: 4rem auto 2rem auto;
+  box-shadow: 0 4px 6px -1px var(--color-shadow), 0 2px 4px -1px var(--color-shadow);
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+}
+
+/* Upper Div (Admin Signup text) ko CSS */
+.admin-signup-header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-font-primary);
+}
+
+/* <-----------------------------------------------------------------> */
+
+/* Middle Div CSS */
+.admin-signup-form {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+/* Flex boxing the FORM */
+.first-row-form,
+.password-main-div {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.examRollNo-field-div,
+.username-field-div,
+.email-field-div,
+.password-div-first {
+  flex: 1;
+}
+
+/* InputFields Labels CSS */
+.admin-signup-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-faded);
+}
+
+/* Input Fields CSS (Username,Password) */
+.admin-signup-form input {
+  display: block;
+  width: 100%; /* Default width for other input fields */
+  padding: 0.75rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-font-primary);
+  transition: border-color 0.3s ease;
+}
+
+.email-field-div input { /* Specific style for email input */
+  width: calc(100% + 30px); /* Increased width by 50px */
+}
+
+.admin-signup-form input:focus {
+  outline: none;
+  border-color: var(--color-login-button);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+/* PhoneNumber Input Field ko UP/DOWN ARROW remove gareko  */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* signup Button CSS */
+.admin-signup-form button {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  margin-top: 1.5rem;
+  background-color: var(--color-login-button);
+  color: var(--color-font-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* signup Button HOVER Effect */
+.admin-signup-form button:hover {
+  background-color: var(--color-login-button-hover);
+}
+
+/* button CLICK huda Effect */
+.admin-signup-form button:active {
+  transform: translateY(1px);
+}
+
+/* <-----------------------------------------------------------------> */
+
+/* Lower Div ko CSS (Forgot password && signup button) */
+.admin-signup-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-direction: column;
+}
+
+/* 'Already have an Account' text CSS  */
+.admin-signup-footer p {
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0.75rem;
+  color: var(--color-faded);
+}
+
+/* Signup Button CSS */
+.admin-signup-footer button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-signup-button);
+  color: var(--color-font-secondary);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.admin-signup-footer button:hover {
+  background-color: var(--color-signup-button-hover);
+}
+
+/* <-----------------------------------------------------------------> */
+
+/* CSS for responsiveness */
+
+@media (max-width: 480px) {
+  .admin-signup-container {
+    margin: 3rem auto 1rem auto;
+    padding: 1.5rem;
+  }
+
+  .admin-signup-header h1 {
+    font-size: 2rem;
+  }
+
+  .first-row-form,
+  .password-main-div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .examRollNo-field-div,
+  .username-field-div,
+  .email-field-div,
+  .password-div-first {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .email-field-div input{
+      width: 100%;
+  }
+
+  .password-div-first{
+      margin-right: 0;
+  }
+
+  .admin-signup-footer {
+    align-items: center;
+  }
+}
+
+/* User a/c created SUCCESS || FAIL  */
+#p-success {
+  color: #10b981;
+}
+
+#p-fail {
+  color: #ef4444;
+}
+
+.bottom-margin {
+  margin-bottom: 6rem !important;
+}
+
+/* FOR TOGGELING PASSWORD  */
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 2.5rem;
+}
+
+.password-field span {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--color-faded);
+}

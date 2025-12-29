@@ -1,0 +1,68 @@
+.navbar {
+  background-color: #e3f2fd;
+}
+
+/* Gap between navbar links */
+li {
+  margin-right: 0.8rem;
+}
+
+#navbar-search-btn {
+  box-shadow: none;
+  color: black;
+  background-color: rgba(109, 184, 235, 0.938);
+}
+/* here we going to make gap between image and navbarTitle ok  */
+.navbar-brand img {
+   margin-right: 0.8rem; /*Adjust the gap as needed*/
+}
+
+/* .navbar-brand h4 {
+  margin-left: 0.5rem;  Adjust the gap as needed 
+} */
+
+
+.a {
+  text-decoration: none;
+  color: black;
+}
+.a:hover {
+  color: black;
+}
+
+/* rendering based on if user logged or not */
+#nav-conditional-rendering {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  #nav-conditional-rendering {
+    display: block !important;
+  }
+}
+
+/* Navbar mobile button */
+#navbar-mobileview-btn {
+  box-shadow: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 380px) {
+  #navbar-mobileview-btn {
+    font-size: 1rem;
+  }
+
+  #navbar-title-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #navbar-mobileview-btn {
+    font-size: 0.5rem;
+  }
+}
